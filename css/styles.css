@@ -602,6 +602,58 @@ margin-bottom: 20px;
 .media-link-footer:focus {
     background-color: #2196F3;
 }
+/*===========================Subscrible Footer=========================*/
+
+.subscrible-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-section-color-theme-light);
+    margin-bottom: 20px;
+}
+.subscrible-container{
+    margin-left: 100px;
+}
+.mail-input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    margin-right: 12px;
+}
+.subscrible-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.7;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    border: transparent;
+    padding-right: 42px;
+}
+.subscrible {
+    position: relative;
+}
+.subscrible-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 13px;
+}
+
+
+
 /*===================================Modal Window==============================*/
 .backdrop {
     position: fixed;
@@ -714,28 +766,49 @@ margin-bottom: 20px;
     outline: none;
     border-color: var(--accent-color);
 }
+/*==============================Checkbox============================*/
 .contact-form-checkbox-label {
+    font-size: 14px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color-theme-light);
     margin-bottom: 30px;
+    color: var(--primary-text-color-theme-light);
 }
-/*I.contact-form-checkbox-label::before {
+.checkbox-link {
+    color: var(--accent-color);
+}
+
+.contact-form-checkbox-label::before {
+    display: block;
     width: 16px;
     height: 15px;
-    border: 1px solid #212121;
+    border: 2px solid #212121;
+    border-radius: 2px;
     content: '';
-    display: block;
     cursor: pointer;
-    margin-right: 8.38px;
-}*/
-.checbox-link {
-    color: var(--accent-color);
+    margin-right: 7px;
+    transition: background-color 250ms var(--timing-function),
+    border 250ms var(--timing-function);
+
+}
+.checkbox-wrapper {
+    position: relative;
+}
+.contact-form-checkbox:checked+.contact-form-checkbox-label::before {
+    background-color: var(--accent-color);
+    border: var(--accent-color);
+}
+
+.contact-form-checkbox:focus+.contact-form-checkbox-label::before {
+    outline: 2px solid var(--accent-color);
+}
+.checkbox-icon {
+    fill: #212121;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 4.1px 3px;
 }
 .contact-form-btn {
     color: #FFFFFF;
@@ -745,7 +818,7 @@ margin-bottom: 20px;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    align-items: center;
+    align-self: center;
     text-align: center;
     letter-spacing: 0.06em;
     padding: 10px 32px;
@@ -754,4 +827,3 @@ margin-bottom: 20px;
     border: 1px solid var(--accent-color);
     cursor: pointer;
 }
-

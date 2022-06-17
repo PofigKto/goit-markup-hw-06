@@ -375,14 +375,24 @@
                                 </svg>
                             </a></li>
                     </ul>
+                </div>
+                <div class="subscrible-container">
+                <h2 class="subscrible-title">Подпишитесь на рассылку</h2>
+                <input class="mail-input" type="mail" name="user_mail" placeholder="E-mail">
+                <span class="subscrible">
+                    <button class="subscrible-btn" type="button">Подписаться</button>
+                    <svg class="subscrible-icon" width="24" height="24">
+                        <use href="./images/sprite.svg.svg#icon-icon_send"></use>
+                    </svg>
+                </span>            
                 
-
-            </div>
+                </div>
+     
         </div>
         
     </footer>
 
-<div class="backdrop" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal-window">
         <button type="button" class="modal-close-button" data-modal-close>
             <svg class="modal-close-btn-icon" width="18" height="18">
@@ -437,20 +447,22 @@
                 </span>
             </label>
             <label class="contact-form-field">
-                <div class="contact-form-key">Комментарий</div>
+                <span class="contact-form-key">Комментарий</span>
                 <textarea 
                 class="contact-form-text" 
                 placeholder="Введите текст" 
                 name="user_massage"></textarea>
             </label>
-            <input 
-                class="contact-form-checkbox visually-hidden" 
-                type="checkbox" 
-                id="checkbox-policy" 
-                name="user_policy"
-                />
-            <label for="checkbox-policy" class="contact-form-checkbox-label"
-                >Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="checbox-link">Условия договора</a></label>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" class="contact-form-checkbox visually-hidden" id="checkbox-policy" name="user_policy" />
+                <label for="checkbox-policy" class="contact-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;
+                    <a href="" class="checkbox-link">Условия договора</a></label>
+                <span class="checked-icon">
+                    <svg class="checkbox-icon" width="11" height="8">
+                        <use href="./images/sprite.svg.svg#icon-vector_5"></use>
+                    </svg>
+                </span>
+            </div>
             <button type="submit" class="contact-form-btn">Отправить</button>
 
         </form>
