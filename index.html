@@ -329,7 +329,7 @@
     <footer class="footer">
         <!--Contact information-->
         <div  class="container-footer container">
-            <div>
+            <div class="adress-container">
                 <a href="" class="logo-footer-link link">
                     <span class="accent" lang="en">Web</span>Studio
                 </a>
@@ -376,17 +376,20 @@
                             </a></li>
                     </ul>
                 </div>
-                <div class="subscrible-container">
+            <div class="subscrible-container">
                 <h2 class="subscrible-title">Подпишитесь на рассылку</h2>
-                <input class="mail-input" type="mail" name="user_mail" placeholder="E-mail">
-                <span class="subscrible">
-                    <button class="subscrible-btn" type="button">Подписаться</button>
+                <input 
+                class="mail-input" 
+                type="mail" 
+                name="user_mail" 
+                placeholder="E-mail">
+
+                <button class="subscrible-btn" type="button">Подписаться
                     <svg class="subscrible-icon" width="24" height="24">
                         <use href="./images/sprite.svg.svg#icon-icon_send"></use>
                     </svg>
-                </span>            
-                
-                </div>
+                </button>
+            </div>
      
         </div>
         
@@ -454,14 +457,17 @@
                 name="user_massage"></textarea>
             </label>
             <div class="checkbox-wrapper">
-                <input type="checkbox" class="contact-form-checkbox visually-hidden" id="checkbox-policy" name="user_policy" />
-                <label for="checkbox-policy" class="contact-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;
-                    <a href="" class="checkbox-link">Условия договора</a></label>
-                <span class="checked-icon">
-                    <svg class="checkbox-icon" width="11" height="8">
-                        <use href="./images/sprite.svg.svg#icon-vector_5"></use>
-                    </svg>
-                </span>
+                <input 
+                type="checkbox" 
+                class="contact-form-checkbox visually-hidden" 
+                id="checkbox-policy" 
+                name="user_policy" />
+                <label 
+                for="checkbox-policy" 
+                class="contact-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;
+                    
+                <a href="" class="checkbox-link">Условия договора</a></label>
+
             </div>
             <button type="submit" class="contact-form-btn">Отправить</button>
 
